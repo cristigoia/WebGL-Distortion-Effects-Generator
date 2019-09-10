@@ -59,7 +59,8 @@ Some effects, use seed for their inner workings. You can set the initial seed an
 Note that although these three concepts allow for a large amount of possible effects, some options won’t work quite well together.
 
 
-Adding your effect to your site
+### Adding your effect to your site
+
 Now that you made your custom effect, it is time to add it to your site. Let’s see how to do that, step by step.
 
 First, download the code and copy some of the required files over:

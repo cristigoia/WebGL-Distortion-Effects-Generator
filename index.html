@@ -8,7 +8,6 @@
 		<meta name="keywords" content="configurator, animation, grid, fullscreen, liquid, effect, webgl, ripples, distortion, three.js" />
 		<link rel="shortcut icon" href="favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
-		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 	</head>
 	<body class="loading cda-naked cda-noimg cda-removeleft  demo-5">
 		<main>
@@ -30,26 +29,26 @@
 		<script src="js/GridToFullscreenEffect.js"></script>
 		<script src="js/basicDemo.js"></script>
 		<script>
-			const itemsWrapper = document.getElementById('items-wrap');
-
-			const configurator = createDemoConfigurator({
-				activation: { type: "side", props: {bottom: true} },
-				transformation: {
-					type: "wavy",
-					props: {
-						seed: "8000",
-						frequency: 1,
-						amplitude: 0.6
-					}
-				},
-				seed: 800,
-				duration: 2.,
-				easings: {
-					toFullscreen: Power3.easeOut,
-					toGrid: Power3.easeOut
-				}
-						
-			})
+			const itemsWrapper = document.getElementById('items-wrap')
+//            {
+//				activation: { type: "side", props: {bottom: true} },
+//				transformation: {
+//					type: "wavy",
+//					props: {
+//						seed: "8000",
+//						frequency: 1,
+//						amplitude: 0.6
+//					}
+//				},
+//				seed: 800,
+//				duration: 2.,
+//				easings: {
+//					toFullscreen: Power3.easeOut,
+//					toGrid: Power3.easeOut
+//				}
+//						
+//			}
+			const configurator = createDemoConfigurator({"activation":{"type":"radial","props":{"onMouse":true,"x":0,"y":0}},"transformation":{"type":"simplex","props":{"frequencyX":0.2,"frequencyY":0.2,"progressLimit":0.30000000000000004}},"duration":1.5,"randomizeSeed":"itemUnique","seed":8000})
 		imagesLoaded(document.querySelectorAll("img"), instance => {
 
 			//https://www.techrepublic.com/article/preloading-and-the-javascript-image-object/
