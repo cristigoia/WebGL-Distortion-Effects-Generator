@@ -1,4 +1,4 @@
-# Configurator for Creating Custom WebGL Distortion Effects
+# WebGL Distortion Effects Generator
 
 
 ## Basics of the configurator
